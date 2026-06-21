@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Menu, X, Sun, Moon, Sparkles } from 'lucide-react';
+import { Menu, X, Sun, Moon } from 'lucide-react';
 
 interface HeaderProps {
   darkMode: boolean;
@@ -64,20 +64,15 @@ export const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, active
           {/* Logo Brand */}
           <button
             onClick={() => handleNavClick('home')}
-            className="flex items-center gap-2 group cursor-pointer focus:outline-none"
+            className="flex items-center group cursor-pointer focus:outline-none"
             id="nav-logo"
           >
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-accent flex items-center justify-center shadow-md shadow-primary/20 group-hover:scale-105 transition-transform">
-              <Sparkles className="w-5 h-5 text-white" />
-            </div>
-            <div className="flex flex-col text-left">
-              <span className="font-display font-bold text-lg leading-tight tracking-wide text-slate-900 dark:text-white">
-                SILTAWI
-              </span>
-              <span className="text-[9px] tracking-widest text-[#06B6D4] uppercase font-semibold font-mono leading-none">
-                Digital Marketing
-              </span>
-            </div>
+            <img 
+              src="https://workshop.siltawi.com/siltawi_logo_normal_eng_v2.svg" 
+              alt="Siltawi Logo" 
+              className="h-10 md:h-11 w-auto object-contain dark:brightness-0 dark:invert group-hover:scale-105 transition-transform duration-300" 
+              referrerPolicy="no-referrer"
+            />
           </button>
 
           {/* Desktop Navigation Links */}

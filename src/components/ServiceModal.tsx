@@ -81,7 +81,7 @@ export const ServiceModal: React.FC<ServiceModalProps> = ({ isOpen, service, onC
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {service.features.map((feature, idx) => (
                     <li 
-                      key={idx} 
+                      key={`${service.id}-feat-${idx}`} 
                       className="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300"
                     >
                       <CheckCircle2 size={16} className="text-emerald-500 mt-0.5 shrink-0" />

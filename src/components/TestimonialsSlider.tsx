@@ -55,7 +55,7 @@ export const TestimonialsSlider: React.FC = () => {
         {/* Render Star Rating row */}
         <div className="flex items-center gap-1 mb-6 text-yellow-300">
           {[...Array(active.rating)].map((_, i) => (
-            <Star key={i} size={18} fill="currentColor" className="animate-pulse" />
+            <Star key={`${active.id}-star-${i}`} size={18} fill="currentColor" className="animate-pulse" />
           ))}
         </div>
 

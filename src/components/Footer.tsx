@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Facebook, Instagram, Linkedin, Send, Sparkles, Loader2, Check } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Send, Loader2, Check } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   const [newsletterEmail, setNewsletterEmail] = useState('');
@@ -59,19 +59,14 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-4 flex flex-col gap-6">
             <button
               onClick={() => handleScrollClick('home')}
-              className="flex items-center gap-2 group cursor-pointer focus:outline-none w-fit text-left"
+              className="flex items-center group cursor-pointer focus:outline-none w-fit text-left"
             >
-              <div className="w-9 h-9 rounded-lg bg-gradient-to-tr from-primary to-accent flex items-center justify-center">
-                <Sparkles className="w-4.5 h-4.5 text-white" />
-              </div>
-              <div className="flex flex-col">
-                <span className="font-display font-bold text-base leading-none text-white tracking-wide">
-                  SILTAWI
-                </span>
-                <span className="text-[8px] tracking-widest text-[#06B6D4] uppercase font-semibold font-mono mt-0.5">
-                  Digital Marketing
-                </span>
-              </div>
+              <img 
+                src="https://workshop.siltawi.com/siltawi_logo_normal_eng_v2.svg" 
+                alt="Siltawi Logo" 
+                className="h-9 w-auto object-contain brightness-0 invert group-hover:scale-105 transition-transform duration-300" 
+                referrerPolicy="no-referrer"
+              />
             </button>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm">

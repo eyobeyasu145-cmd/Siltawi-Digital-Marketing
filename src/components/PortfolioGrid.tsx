@@ -210,7 +210,7 @@ export const PortfolioGrid: React.FC = () => {
                   </h4>
                   <ul className="flex flex-col gap-2">
                     {selectedProject.results.map((result, index) => (
-                      <li key={index} className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
+                      <li key={`${selectedProject.id}-res-${index}`} className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300">
                         <CheckCircle size={15} className="text-emerald-500 shrink-0" />
                         <span>{result}</span>
                       </li>
@@ -225,8 +225,8 @@ export const PortfolioGrid: React.FC = () => {
                       Core Technologies & Channels
                     </h4>
                     <div className="flex flex-wrap gap-2">
-                      {selectedProject.technologies.map((tech) => (
-                        <span key={tech} className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-200/30 dark:border-slate-800/30 text-xs font-semibold text-slate-600 dark:text-slate-400 font-mono">
+                      {selectedProject.technologies.map((tech, index) => (
+                        <span key={`${selectedProject.id}-tech-${tech}-${index}`} className="px-3 py-1.5 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-200/30 dark:border-slate-800/30 text-xs font-semibold text-slate-600 dark:text-slate-400 font-mono">
                           {tech}
                         </span>
                       ))}

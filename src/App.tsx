@@ -624,7 +624,7 @@ export default function App() {
                     <div className="relative border-l-2 border-slate-200 dark:border-slate-800 pl-6 md:pl-10 text-left space-y-10 md:space-y-12">
                       {timelineData.map((time, idx) => (
                         <motion.div
-                          key={idx}
+                          key={`timeline-${time.year}-${idx}`}
                           initial={{ opacity: 0, x: -10 }}
                           whileInView={{ opacity: 1, x: 0 }}
                           viewport={{ once: true, amount: 0.2 }}
