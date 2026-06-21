@@ -52,7 +52,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
           <img 
             src="https://workshop.siltawi.com/siltawi_logo_normal_eng_v2.svg" 
             alt="Siltawi Logo" 
-            className="h-16 md:h-20 w-auto object-contain brightness-0 invert" 
+            className="h-16 md:h-20 w-auto object-contain" 
             referrerPolicy="no-referrer"
           />
         </motion.div>

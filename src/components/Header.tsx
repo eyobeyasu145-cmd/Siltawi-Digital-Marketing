@@ -70,7 +70,7 @@ export const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, active
             <img 
               src="https://workshop.siltawi.com/siltawi_logo_normal_eng_v2.svg" 
               alt="Siltawi Logo" 
-              className="h-10 md:h-11 w-auto object-contain dark:brightness-0 dark:invert group-hover:scale-105 transition-transform duration-300" 
+              className="h-10 md:h-11 w-auto object-contain group-hover:scale-105 transition-transform duration-300" 
               referrerPolicy="no-referrer"
             />
           </button>
